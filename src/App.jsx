@@ -7,9 +7,9 @@ import 'jspdf-autotable';
 const SECTIONS = Object.keys(questions);
 const MODES = { LEARN: 'learn', TEST: 'test' };
 
-// --- Question Type Groups ---
-const SELF_GRADED_SECTIONS = ['shortAnswer', 'fillInTheBlanks', 'scenarioAnalysis', 'problemSolving'];
-const MULTIPLE_CHOICE_SECTIONS = ['multipleChoice', 'matching'];
+// --- Question Type Groups (MODIFIED) ---
+const SELF_GRADED_SECTIONS = ['shortAnswer', 'scenarioAnalysis', 'problemSolving'];
+const MULTIPLE_CHOICE_SECTIONS = ['multipleChoice', 'matching', 'fillInTheBlanks'];
 
  /* A robust, unbiased shuffle algorithm (Fisher-Yates).
  * Ensures uniform randomization of array elements.
