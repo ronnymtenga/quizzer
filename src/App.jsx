@@ -287,7 +287,7 @@ export default function QuizGame() {
             if (isCorrect) resultsBySection[sec].correct++;
             
             resultsBySection[sec].questions.push({
-                question: q.question, scenario: q.scenario || q.problem, userAnswer, correctAnswer: q.answer || q.solution, correct: isCorrect, key: key,
+                question: q.question, scenario: q.scenario || q.problem, userAnswer, correctAnswer: q.answer !== undefined ? q.answer : q.solution, correct: isCorrect, key: key,
             });
         });
         totalCorrect += resultsBySection[sec].correct;
