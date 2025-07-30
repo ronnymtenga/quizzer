@@ -1,5 +1,5 @@
 # Dependencies
-node_modules/
+/node_modules
 /.pnp
 .pnp.js
 
@@ -8,11 +8,12 @@ node_modules/
 
 # Production
 /dist
+/dist-ssr
 /build
 
-# Misc
+# Misc and environment variables
 .DS_Store
-.env.local
+.env*.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -22,6 +23,7 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # Editor directories and files
 .vscode/
